@@ -22,3 +22,7 @@ def get(request):
         item = dict(id=i.id, username=i.username, age=i.age, tel=i.tel)
         data.append(item)
     return JsonResponse({"code": 200, "message": "ok", "data": data})
+
+def update(request):
+    obj=models.UserInfo.objects.filter(username='jack3').update(username='admin')
+    return JsonResponse({"code": 200, "message": "ok", "data": '1'})

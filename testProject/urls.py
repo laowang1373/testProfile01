@@ -22,4 +22,5 @@ urlpatterns = [
     # path('admin/', admin.site.urls),
     path('create/', web.views.create),
     path('get/', web.views.get),
+    path('update/', web.views.update),
 ]
