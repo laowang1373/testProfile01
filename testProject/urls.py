@@ -20,7 +20,8 @@ import web.views
 
 urlpatterns = [
     # path('admin/', admin.site.urls),
-    path('create/', web.views.create),
-    path('get/', web.views.get),
-    path('update/', web.views.update),
+    # path('create/', web.views.create),
+    path('queryUser/', web.views.queryUser.as_view(), name='query_user'),
+    path('createUser/', web.views.createUser.as_view(), name='create_user'),
+    # path('update/', web.views.update),
 ]
